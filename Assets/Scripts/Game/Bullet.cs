@@ -1,15 +1,23 @@
 ﻿using UnityEngine;
 
-public class Bullet : MonoBehaviour
+namespace ReloadIt
 {
-    [SerializeField]
-    private float speed;
-
-    private Rigidbody rigidbody;
-
-    private void OnEnable()
+    public class Bullet : PlaceableBehavior
     {
-        rigidbody = GetComponent<Rigidbody>();
-        rigidbody.velocity = transform.forward * speed;
+        [SerializeField]
+        private float speed;
+
+        private new Rigidbody rigidbody;
+
+        private void OnEnable()
+        {
+            rigidbody = GetComponent<Rigidbody>();
+            rigidbody.velocity = transform.forward * speed;
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            PutToPool();
+        }
     }
 }

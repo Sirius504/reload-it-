@@ -1,18 +1,26 @@
-﻿using System.Collections;
+﻿using ReloadIt.UI;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game : MonoBehaviour {
+namespace ReloadIt
+{
+    public class Game : MonoBehaviour
+    {
+        public ResourceHolder ResourceHolder { get; private set; }
+        public PoolManager PoolManager { get; private set; }
+        public IngameGui IngameGui { get; private set; }
+        public Player Player { get; private set; }
 
-    public IngameGui ingameGui;
-    public Player player;
+        public void Init()
+        {
+            ResourceHolder = this.Get<ResourceHolder>("ResourceHolder");
+            PoolManager = this.Get<PoolManager>("PoolManager");
+            IngameGui = this.Get<IngameGui>("IngameGui");
+            Player = this.Get<Player>("Player");
 
-	void Start () {
-        ingameGui.Init();
+            IngameGui.Init();
+            PoolManager.Init();
+        }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

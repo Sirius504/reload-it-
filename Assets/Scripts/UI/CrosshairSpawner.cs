@@ -5,34 +5,37 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class CrosshairSpawner : MonoBehaviour
-{ 
-    public Image crosshair;
-
-    public void Init()
+namespace ReloadIt.UI
+{
+    public class CrosshairSpawner : MonoBehaviour
     {
-        // do nothing, lol
-    }
+        public Image crosshair;
 
-    public void EnableCrosshair(Vector2 position)
-    {
-        crosshair.rectTransform.position = position;
-        if (!crosshair.enabled)
-            crosshair.gameObject.SetActive(true);
-    }
+        public void Init()
+        {
+            // do nothing, lol
+        }
 
-    public void DisableCrosshair()
-    {
-        crosshair.gameObject.SetActive(false);
-    }
+        public void EnableCrosshair(Vector2 position)
+        {
+            crosshair.rectTransform.position = position;
+            if (!crosshair.enabled)
+                crosshair.gameObject.SetActive(true);
+        }
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        //throw new NotImplementedException();
-    }
+        public void DisableCrosshair()
+        {
+            crosshair.gameObject.SetActive(false);
+        }
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        //throw new NotImplementedException();
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            //throw new NotImplementedException();
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            //throw new NotImplementedException();
+        }
     }
 }

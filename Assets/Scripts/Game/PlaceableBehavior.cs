@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 
-public class PlaceableBehavior: PoolableBehavior
+namespace ReloadIt
 {
-    [HideInInspector]
-    public Vector2 LevelPosition;
+    public class PlaceableBehavior : PoolableBehavior
+    {
+        [HideInInspector]
+        public Vector2 LevelPosition;
+    }
 }

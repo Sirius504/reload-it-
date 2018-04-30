@@ -1,17 +1,20 @@
 ﻿using System;
 using UnityEngine;
-
-public class Weapon : MonoBehaviour
+namespace ReloadIt
 {
-    [SerializeField]
-    private GameObject bulletPrefab;
-
-    [SerializeField]
-    private Transform bulletStartPoint;
-
-    public Bullet Shoot(Vector3 target)
+    public class Weapon : MonoBehaviour
     {
-        transform.LookAt(target);
-        return Instantiate(bulletPrefab, bulletStartPoint.position, bulletStartPoint.rotation, null).GetComponent<Bullet>();
+        [SerializeField]
+        private GameObject bulletPrefab;
+
+        [SerializeField]
+        private Transform bulletStartPoint;
+
+        public Bullet Shoot(Vector3 target)
+        {
+            transform.LookAt(target);
+            Bullet bullet = Bullet.GetFromPool<Bullet>(null, bulletStartPoint.position, bulletStartPoint.rotation);
+            return bullet;
+        }
     }
 }

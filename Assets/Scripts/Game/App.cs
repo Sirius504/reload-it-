@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 
-public class App : MonoBehaviour {
-
-    public static Game Game;
-
-    private void Awake()
+namespace ReloadIt
+{
+    public class App : MonoBehaviour
     {
-        Game = GetComponentInChildren<Game>();
+        public static Game Game;
 
+        private void Awake()
+        {
+            Game = GetComponentInChildren<Game>();
+            Game.Init();
+        }
     }
 }
