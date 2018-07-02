@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -284,22 +284,49 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{9A2A1A50-E65B-74A8-AF77-B45DF78A7632}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{39BB8A60-453F-EEAD-9859-5F71DB02F6D6}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\CSharp vNext Support\AsyncTools\AsyncTools.cs" />
     <Compile Include="Assets\CSharp vNext Support\AsyncTools\NextFrameHelper.cs" />
     <Compile Include="Assets\DontGoThroughThings.cs" />
+    <Compile Include="Assets\MeleeEnemy.cs" />
     <Compile Include="Assets\Scripts\Extentions.cs" />
     <Compile Include="Assets\Scripts\Game\App.cs" />
     <Compile Include="Assets\Scripts\Game\Bullet.cs" />
     <Compile Include="Assets\Scripts\Game\Game.cs" />
+    <Compile Include="Assets\Scripts\UI\GuiManager.cs" />
+    <Compile Include="Assets\Scripts\Game\IPlayerInteractable.cs" />
+    <Compile Include="Assets\Scripts\Game\IShotable.cs" />
+    <Compile Include="Assets\Scripts\Game\Miner\EnterMineAndDigForNugget.cs" />
+    <Compile Include="Assets\Scripts\FSM\FiniteStateMachine.cs" />
+    <Compile Include="Assets\Scripts\FSM\FSMState.cs" />
+    <Compile Include="Assets\Scripts\Game\Miner\Miner.cs" />
+    <Compile Include="Assets\Scripts\Game\Miner\VisitBankAndDepositGold.cs" />
     <Compile Include="Assets\Scripts\Game\PlaceableBehavior.cs" />
     <Compile Include="Assets\Scripts\Game\Player.cs" />
     <Compile Include="Assets\Scripts\Game\PoolableBehavior.cs" />
     <Compile Include="Assets\Scripts\Game\PoolManager.cs" />
     <Compile Include="Assets\Scripts\Game\ResourceHolder.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\GameOverState.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\InitState.cs" />
     <Compile Include="Assets\Scripts\Game\Weapon.cs" />
     <Compile Include="Assets\Scripts\UI\CrosshairSpawner.cs" />
     <Compile Include="Assets\Scripts\UI\IngameGui.cs" />
+    <Compile Include="Assets\Scripts\UI\Interfaces\IShowableHideable.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef" />
+    <None Include="Assets\NavMeshComponents\Scripts\NavMeshComponents.asmdef" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>

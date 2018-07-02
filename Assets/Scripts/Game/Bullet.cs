@@ -17,6 +17,9 @@ namespace ReloadIt
 
         private void OnCollisionEnter(Collision collision)
         {
+            IShotable target = collision.gameObject.GetComponent<IShotable>();
+            if (target != null)
+                target.OnBeingShot(this);
             PutToPool();
         }
     }

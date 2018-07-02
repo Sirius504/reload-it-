@@ -1,5 +1,73 @@
 ********************************************************************************
-*                          30 апреля 2018 г. 21:51:44                          *
+*                           28 июня 2018 г. 0:24:22                            *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.228
+Unity version: 2017.3.1f1
+Platform: Windows
+Target assembly: NavMeshComponents.dll
+Project directory: D:\UNity Projects\New World
+Target profile directory: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity
+Unity Mono executable: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\bin\mono.exe
+Compiler: Microsoft C# 7.2 (2.7.0.62620)
+
+- Compilation ------------------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\csc.exe
+Arguments: -noconfig @Temp/UnityTempFile-a0cc9960eaa7c784095e14c114808baf
+Exit code: 0
+Elapsed time: 2,37 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\NavMeshComponents.dll
+Exit code: 0
+Elapsed time: 0,21 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+********************************************************************************
+*                           28 июня 2018 г. 0:24:26                            *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.228
+Unity version: 2017.3.1f1
+Platform: Windows
+Target assembly: NavMeshComponentsEditor.dll
+Project directory: D:\UNity Projects\New World
+Target profile directory: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
+Unity Mono executable: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\bin\mono.exe
+Compiler: Microsoft C# 7.2 (2.7.0.62620)
+
+- Compilation ------------------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\csc.exe
+Arguments: -noconfig @Temp/UnityTempFile-202a560fe63058f4dbff2605b3f9da90
+Exit code: 0
+Elapsed time: 2,31 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\NavMeshComponentsEditor.dll
+Exit code: 0
+Elapsed time: 0,18 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+********************************************************************************
+*                           28 июня 2018 г. 0:24:30                            *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 4.0.4.228
 Unity version: 2017.3.1f1
@@ -13,14 +81,115 @@ Compiler: Microsoft C# 7.2 (2.7.0.62620)
 - Compilation ------------------------------------------------
 
 Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\csc.exe
-Arguments: -noconfig @Temp/UnityTempFile-6d76cc9bffd31e04b892571353280d19
-Exit code: 0
-Elapsed time: 2,20 sec
+Arguments: -noconfig @Temp/UnityTempFile-bc3df078290125745ac4c7cb293fbe47
+Exit code: 1
+Elapsed time: 1,25 sec
+
+- Output (2 lines):
+0: Assets\Scripts\Game\Game.cs(3,7): error CS0246: The type or namespace name 'GFSM' could not be found (are you missing a using directive or an assembly reference?)
+1: Assets\Scripts\Game\Game.cs(20,16): error CS0305: Using the generic type 'FiniteStateMachine<T>' requires 1 type arguments
+
+- Errors (0 lines):
+
+********************************************************************************
+*                           28 июня 2018 г. 0:27:11                            *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.228
+Unity version: 2017.3.1f1
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: D:\UNity Projects\New World
+Target profile directory: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity
+Unity Mono executable: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\bin\mono.exe
+Compiler: Microsoft C# 7.2 (2.7.0.62620)
+
+- Compilation ------------------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\csc.exe
+Arguments: -noconfig @Temp/UnityTempFile-cd38ccff459141341b39aa4b2852e790
+Exit code: 1
+Elapsed time: 2,11 sec
+
+- Output (2 lines):
+0: Assets\Scripts\Game\Game.cs(3,7): error CS0246: The type or namespace name 'GFSM' could not be found (are you missing a using directive or an assembly reference?)
+1: Assets\Scripts\Game\Game.cs(20,16): error CS0305: Using the generic type 'FiniteStateMachine<T>' requires 1 type arguments
+
+- Errors (0 lines):
+
+********************************************************************************
+*                           28 июня 2018 г. 0:27:52                            *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.228
+Unity version: 2017.3.1f1
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: D:\UNity Projects\New World
+Target profile directory: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity
+Unity Mono executable: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\bin\mono.exe
+Compiler: Microsoft C# 7.2 (2.7.0.62620)
+
+- Compilation ------------------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\csc.exe
+Arguments: -noconfig @Temp/UnityTempFile-115808b0a04932643aee8bd96b3535bc
+Exit code: 1
+Elapsed time: 0,86 sec
 
 - Output (3 lines):
+0: Assets\Scripts\Game\Game.cs(28,49): error CS1002: ; expected
+1: Assets\Scripts\Game\Game.cs(29,33): error CS1525: Invalid expression term ')'
+2: Assets\Scripts\Game\Game.cs(29,34): error CS1002: ; expected
+
+- Errors (0 lines):
+
+********************************************************************************
+*                           28 июня 2018 г. 0:32:36                            *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.228
+Unity version: 2017.3.1f1
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: D:\UNity Projects\New World
+Target profile directory: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity
+Unity Mono executable: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\bin\mono.exe
+Compiler: Microsoft C# 7.2 (2.7.0.62620)
+
+- Compilation ------------------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\csc.exe
+Arguments: -noconfig @Temp/UnityTempFile-aa85f5784de24064495521ef951d8f0f
+Exit code: 1
+Elapsed time: 1,83 sec
+
+- Output (3 lines):
+0: Assets\MeleeEnemy.cs(17,34): error CS1503: Argument 1: cannot convert from 'ReloadIt.Game.States' to 'FSMState<ReloadIt.Game>'
+1: Assets\Scripts\Game\Weapon.cs(11,27): warning CS0649: Field 'Weapon.bulletStartPoint' is never assigned to, and will always have its default value null
+2: Assets\Scripts\Game\Bullet.cs(8,23): warning CS0649: Field 'Bullet.speed' is never assigned to, and will always have its default value 0
+
+- Errors (0 lines):
+
+********************************************************************************
+*                           28 июня 2018 г. 0:34:10                            *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.228
+Unity version: 2017.3.1f1
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: D:\UNity Projects\New World
+Target profile directory: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity
+Unity Mono executable: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\bin\mono.exe
+Compiler: Microsoft C# 7.2 (2.7.0.62620)
+
+- Compilation ------------------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\csc.exe
+Arguments: -noconfig @Temp/UnityTempFile-a4654099f35075f44a15c3149f36ce2a
+Exit code: 0
+Elapsed time: 3,47 sec
+
+- Output (2 lines):
 0: Assets\Scripts\Game\Weapon.cs(11,27): warning CS0649: Field 'Weapon.bulletStartPoint' is never assigned to, and will always have its default value null
 1: Assets\Scripts\Game\Bullet.cs(8,23): warning CS0649: Field 'Bullet.speed' is never assigned to, and will always have its default value 0
-2: Assets\Scripts\Game\PoolableBehavior.cs(8,24): warning CS0649: Field 'PoolableBehavior.path' is never assigned to, and will always have its default value null
 
 - Errors (0 lines):
 
@@ -29,7 +198,43 @@ Elapsed time: 2,20 sec
 Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\pdb2mdb.exe
 Arguments: Temp\Assembly-CSharp.dll
 Exit code: 0
-Elapsed time: 0,22 sec
+Elapsed time: 0,21 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+********************************************************************************
+*                           28 июня 2018 г. 0:36:24                            *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.228
+Unity version: 2017.3.1f1
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: D:\UNity Projects\New World
+Target profile directory: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity
+Unity Mono executable: D:\Programs\Unity\Editor\Data\MonoBleedingEdge\bin\mono.exe
+Compiler: Microsoft C# 7.2 (2.7.0.62620)
+
+- Compilation ------------------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\csc.exe
+Arguments: -noconfig @Temp/UnityTempFile-fb400d84d3ef41243b50fb3588a94236
+Exit code: 0
+Elapsed time: 2,20 sec
+
+- Output (2 lines):
+0: Assets\Scripts\Game\Weapon.cs(11,27): warning CS0649: Field 'Weapon.bulletStartPoint' is never assigned to, and will always have its default value null
+1: Assets\Scripts\Game\Bullet.cs(8,23): warning CS0649: Field 'Bullet.speed' is never assigned to, and will always have its default value 0
+
+- Errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: D:\UNity Projects\New World\CSharp70Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0,18 sec
 
 - Output (0 lines):
 

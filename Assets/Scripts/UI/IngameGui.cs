@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -9,6 +7,17 @@ namespace ReloadIt.UI
     public class IngameGui : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
         CrosshairSpawner crosshairSpawner;
+
+        public enum Screens
+        {
+            MainMenu,
+            GameOver
+        }
+
+        internal void Show()
+        {
+            throw new NotImplementedException();
+        }
 
         // Use this for initialization
         public void Init()

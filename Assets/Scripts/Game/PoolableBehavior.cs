@@ -4,18 +4,6 @@ namespace ReloadIt
 {
     public class PoolableBehavior : MonoBehaviour
     {
-        [SerializeField]
-        private string path;
-        public string ResourcePath
-        {
-            get
-            {
-                if (string.IsNullOrEmpty(path))
-                    Debug.Log($"Path field on prefab {gameObject.name} is null or empty");                    
-                return path;
-            }
-        }
-
         public void PutToPool()
         {
             App.Game.PoolManager.PutToPool(this);

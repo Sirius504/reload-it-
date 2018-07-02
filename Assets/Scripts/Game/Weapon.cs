@@ -13,7 +13,7 @@ namespace ReloadIt
         public Bullet Shoot(Vector3 target)
         {
             transform.LookAt(target);
-            Bullet bullet = Bullet.GetFromPool<Bullet>(null, bulletStartPoint.position, bulletStartPoint.rotation);
+            Bullet bullet = PoolableBehavior.GetFromPool<Bullet>(null, bulletStartPoint.position, bulletStartPoint.rotation);
             return bullet;
         }
     }
